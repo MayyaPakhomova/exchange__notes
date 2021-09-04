@@ -1,0 +1,77 @@
+.hide {
+    display: none;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin : 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.form-control {
+    background-color: #fcfcfc;
+    border          : 1px solid rgba(13, 202, 240, 0.5);
+}
+
+a {
+    text-decoration: none;
+    transition     : transform .3s;
+}
+
+.header-link:hover {
+    background-color: #fff !important;
+    color           : rgba(13, 202, 240) !important;
+    border          : 1px solid rgba(13, 202, 240);
+}
+
+.active {
+    background-color: rgba(13, 202, 240, 0.5) !important;
+    box-shadow      : 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.main-link:hover {
+    background-color: rgba(13, 202, 240) !important;
+    color           : #fff !important;
+}
+
+.note-btn,
+.create-btn {
+    display    : block;
+    margin-left: auto;
+}
+
+.note-btn:hover,
+.create-btn:hover {
+    color: #fff !important;
+}
+
+::placeholder {
+    color: #6c757d !important;
+
+}
+
+.alert-form {
+    height    : 16vh;
+    width     : 45vw;
+    position  : absolute;
+    top       : 226px;
+    text-align: center;
+    color     : white;
+    font-size : 1.5em;
+}
+
+.numbered-list {
+    list-style: unset;
+}
