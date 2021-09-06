@@ -41,7 +41,8 @@ a {
         0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.main-link:hover {
+.main-link:hover,
+.error-link:hover {
     background-color: rgba(13, 202, 240) !important;
     color           : #fff !important;
 }

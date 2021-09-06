@@ -5,7 +5,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Note from './components/Note';
-// import Error from './components/Error';
+import Error from './components/Error';
 
 function App() {
   return (
