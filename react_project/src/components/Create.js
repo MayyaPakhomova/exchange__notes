@@ -4,13 +4,13 @@ import env from '../env.json';
 
 function Create() {
   const [url, setUrl] = useState('');
-  const [lineClass, setLineClass] = useState('hide'); // скрываем
+  const [lineClass, setLineClass] = useState('hide'); 
   const [formClass, setFormClass] = useState('');
   const [alert, setAlert] = useState('hide');
   const [error, setError] = useState('hide');
   const [createButton, setCreateButton] = useState(
     'btn btn-outline-info create-btn'
-  ); // скрываем
+  ); 
 
   let sendData = (obj) => {
     setFormClass('hide form-group');
@@ -24,7 +24,6 @@ function Create() {
     })
       .then((response) => response.json())
       .then((response) => {
-        // console.log(response);
         if (response.result) {
           setUrl(env.url + '/' + response.url);
         } else {
@@ -38,7 +37,6 @@ function Create() {
     let note = event.target.elements.note.value;
     note = note.trim();
     if (note === '') {
-      //   alert('Заполните поля');
       setAlert('alert alert-danger alert-form');
       setCreateButton('hide');
       return false;
